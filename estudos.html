@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <meta name="viewport" content="width=device-width, initial-scale=1">
- <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css">
-  <link rel="stylesheet" href="css/theme-classic.css">
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css">
+  <link rel="stylesheet" href="css/themes/sibac.css" />
   <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css">
   <link rel="shortcut icon" href="favicon.ico">
   <script src="js/jquery.js"></script>
@@ -23,8 +24,8 @@ var maxLength = 20;
 document.write(
   '<div data-role="page" id="list" class="type-index" data-theme="c">' +
   '  <div data-role="header" data-position="fixed" data-theme="b"> ' +
-  '    <h1><span id="widgetTitle">Estudos para Celulas</span> ' +
-  '      <span style="font-size: x-small"></span></h1>' +
+  '    <h1><span id="widgetTitle">Estudos para Celulas</span> </h1>' +
+  '      <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>' +
   '  </div>' +
   '  <div data-role="content" >' +
   '    <ul data-role="listview" data-filter="true" id="noticiaList" >'
@@ -37,11 +38,27 @@ for(var i=1; i<=maxLength; i++){
 document.write(
   '    </ul>' +
   '  </div>' +
+  
+  
+ '<div data-role="panel" data-display="push" data-theme="b" id="nav-panel"> '+
+'        <ul data-role="listview">'+
+'            	<li data-icon="delete"><a href="#" data-rel="close">Close menu</a></li>'+
+'                <li data-icon="info"><a href="quemsomos.html">Quem Somos</a></li>'+
+'                <li data-icon="shop"><a href="dizimos.html">Dízimos</a></li>       '+         
+'                <li data-icon="mail"><a href="contato.html">Contato</a></li>'+
+'                <li><a href="devocional.html">Devocional</a></li>'+
+'                <li><a href="fotos.html">Fotos</a></li>'+
+'                <li><a href="videos.html">Videos</a></li>'+
+'                <li><a href="membros.html">Membros</a></li>'+
+'                <li><a href="estudos.html" rel="external">Lições Células</a></li>'+
+'                <li><a href="ebd.html">Revista EBD</a></li>'+   
+'        </ul>'+
+'    </div>'+  
   '</div>'
   );
 for(i=1; i<=maxLength; i++){
   document.write(
-    '<div data-role="page" id="noticia' + i + '" class="type-index" data-theme="d">' +
+    '<div data-role="page" id="noticia' + i + '" class="type-index" data-theme="b">' +
     '  <div data-role="header" data-position="inline" >' +
     '    <a href="#list" data-role="button" data-icon="home" data-back="true">Home</a>' +
     '    <h1 id="noticiaHeader' + i + '">&nbsp;</h1>' +
