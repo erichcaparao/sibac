@@ -6,9 +6,78 @@
     <title>EZoApp</title>
     <meta name="viewport" content="width=device-width, user-scalable=no">
 	<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' 'unsafe-eval' data: blob: filesystem:">    
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.2/normalize.min.css">
-          <link rel="stylesheet" href="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-                    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="componente/normalize.min.css">
+          <link rel="stylesheet" href="componente/jquery.mobile-1.4.5.min.css">
+                  <!-- Export CSS  -->
+      <style>
+        @import url(http://fonts.googleapis.com/css?family=Titillium+Web);
+ @media screen and (max-width: 400px) {
+  .gk-component-simple-weather h2 {
+    margin-top: -5px!important;
+    font-size: 50px!important;
+  }
+  .gk-component-simple-weather i {
+    width: 120px!important;
+    height: 90px!important;
+  }
+  .gk-component-simple-weather i img {
+    width: 180px!important;
+  }
+}
+.gk-component-simple-weather {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid #999;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  background: -webkit-linear-gradient(top, #999 0%, #ccc 30%, #aaa 70%, #888 100%);
+  background: -moz-linear-gradient(top, #999 0%, #ccc 30%, #aaa 70%, #888 100%);
+  background: linear-gradient(top, #999 0%, #ccc 30%, #aaa 70%, #888 100%);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .9)
+}
+.gk-component-simple-weather i {
+  display: block;
+  width: 140px;
+  height: 100px;
+  margin: 10px auto 0;
+  overflow: hidden;
+}
+.gk-component-simple-weather i img {
+  width: 200px;
+}
+.gk-component-simple-weather h2 {
+  margin: 0 0 8px;
+  color: #fff;
+  font-size: 70px;
+  font-weight: 300;
+  text-align: center;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+}
+.gk-component-simple-weather ul {
+  margin: 0 10px 10px;
+  padding: 0;
+}
+.gk-component-simple-weather li {
+  font-family: "Titillium Web";
+  background: #fff;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 4px 8px;
+  display: inline-block;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .7);
+  margin: 0 2px 10px;
+  font-size: 12px;
+}
+.gk-component-simple-weather p {
+  font-family: "Titillium Web";
+  text-shadow: none;
+  font-size: 12px;
+}
+      </style>
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
           <script>
         $(document).on("mobileinit", function() {
           $.mobile.autoInitializePage = false;
@@ -23,9 +92,9 @@
                   <!-- GK Loader use RequireJS to load module -->
       <script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.16/require.min.js"></script>
       <!--Plug in GK-->
-      <script src="//ezoui.com/components/jquery.gk/jquery.gk.min.js"></script>
+      <script src="components/jquery.gk/jquery.gk.min.js"></script>
       <!-- Load GK components -->
-      <script components="test/json-listview.html,test/listview-li.html,test/rss-news.html" callback="mobileInitPage" src="test/gk-loader.min.js"></script>
+      <script components="componente/gmap.html" callback="mobileInitPage" src="componente/gk-loader.min.js"></script>
               <!-- Clear notify, mask, design panel -->
       <script>
       (function() {
@@ -84,6 +153,14 @@
     alert(JSON.stringify(vo));
   });
 
+}); /* code gen by gk-form  */
+$(document).on("gkComponentsReady", function () {
+  $("#gk-721hlCE-btn").click(function () {
+    var $form = $("#gk-721hlCE");
+    if ($form.gk("valid")) {
+      console.log($form.gk("info"));
+    }
+  });
 });
       </script>
       </head>
@@ -91,11 +168,8 @@
     <!-- Page: Dizimos  -->
 <div id="Dizimos" data-role="page"> 
  <div role="main" class="ui-content"> 
-  <div id="gk-721ZP29" is="rss-news" service="http://sibacaltocaparao.blogspot.com/feeds/posts/default?alt=rss" rownum="10"> 
-   <ul data-role="listview" data-autodividers="true" data-inset="true" is="json-listview"> 
-    <li divider="{{title}}" is="listview-li"> 
-   <span style="color:#666;font-size:0.8em;white-space: normal;">{{contentSnippet}}</span> </li> 
-   </ul> 
+  <div is="gmap" style="width:100%;height:200px;" zoom="12" markervisible="true" key="AIzaSyBvVuEE82aq--xCd-VFSBRZUMerNvAzY8c">
+   Alto Caparao, MG
   </div> 
  </div> 
 </div>
