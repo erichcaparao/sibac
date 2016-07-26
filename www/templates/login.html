@@ -1,0 +1,24 @@
+<ion-view title="Login" id="page9" class=" ">
+<mui-icon type="ionic" icon="ion-android-more-vertical" position="top-right" ng-click="modalLoginMenu.show()"></mui-icon>
+    <ion-content padding="true" style="background: url(img/ps1LgjRWQTG3lSyUcV9U_01.jpg) no-repeat center;background-size:cover;" class="has-header">
+        
+            <ion-list id="login-list4" class=" ">
+                <label class="item item-input " id="login-input1">
+                    <span class="input-label">E-mail</span>
+                    <input type="text" placeholder="contato@sibac.org.br" ng-model="logUser.user">
+                </label>
+                <label class="item item-input " id="login-input2">
+                    <span class="input-label">Senha</span>
+                    <input type="password" placeholder="*****" ng-model="logUser.pass" ng-change="validate.login(logUser)">
+                </label>
+            </ion-list>
+            <div class="spacer" style="height: 40px;"></div>
+            
+            <button id="login-button1" class=" button button-assertive  button-block icon-right ion-android-arrow-forward " ng-show="validate.login(logUser).isValid" ng-click="login(logUser)">Entrar</button>
+
+                   
+            <div class="form-terms" class=" button button-positive  button-block button-clear "ng-click="modalLoginSignUp.show()"> Novo Usuario</div>
+
+ 
+    </ion-content>
+</ion-view>

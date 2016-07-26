@@ -1,0 +1,40 @@
+<ion-view class="mui-bg-dark-linear">
+	<button ng-click="modalLoginRegister.hide()" class="mui-button mui-button-icon mui-stick-top-right">
+		<i class="material-icons">close</i>
+	</button>
+	<ion-content overflow-scroll="false">
+		<div class="row">
+			<div class="col">
+				<h2 class="mui-align-center mui-text-white">
+					New Account
+				</h2>
+				<div class="mui-form">
+					<div class="list">
+						<div class="mui-item item-input">
+							<input type="text" placeholder="Full Name" ng-model="user.signUpFullName"></input>
+						</div>
+						<div class="mui-item item-input">
+							<input type="text" placeholder="Username" ng-model="user.signUpUsername"></input>
+						</div>
+						<div class="mui-item item-input">
+							<input type="text" placeholder="Email" ng-model="user.signUpEmail"></input>
+						</div>
+						<div class="mui-item item-input">
+							<input type="password" placeholder="Password" ng-model="user.signUpPass"></input>
+						</div>
+						<div class="mui-item item-input">
+							<input type="password" placeholder="Confirm Password" ng-model="user.signUpConfirmPass" ng-change="ionicFire.validate(user)"></input>
+							<i class="mui-input-icon ion-ios-circle-filled mui-text-green mui-lighten-50" ng-show="passConfirmed"></i>
+						</div>
+					</div>
+					<div class="form-terms">
+						By tapping "Sign Up" you agree to the <a ng-click="modalLoginTerms.show()" class="mui-text-orange">terms &amp; conditions</a>
+					</div>
+					<button ng-click="ionicFire.create(user)" id="signUpButton" class="button mui-button-disabled button-block">
+						Sign Up
+					</button>
+				</div>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>

@@ -1,0 +1,267 @@
+/* Empty. Add your own CSS if you like */
+*{font-family: 'Quicksand', sans-serif;}
+.mui-button-icon{
+	border: none;
+	font-size: 35px;
+}
+.mui-icon-top-left{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+.mui-icon-top-right{
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 2;
+}
+.mui-icon-bottom-left{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 2;
+}
+.mui-icon-bottom-right{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 2;
+}
+.mui-icon-center{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 2;
+}
+.mui-icon-red{color: #DA4453 !important;}
+.mui-icon-green{color: #37BC9B !important;}
+.mui-icon-blue{color: #3BAFDA !important;}
+.mui-icon-orange{color: #FF512F !important;}
+.mui-icon-white{color: white !important;}
+.mui-icon-black{color: black !important;}
+
+.mui-bar-disabled{background-color: rgba(0,0,0,0.4);}
+.mui-bar-disabled > .title{color: rgba(204,204,204,0.3);}
+.popup-container{
+	font-family: 'Quicksand', sans-serif;
+	color: white;
+	background-color: rgba(0,0,0,0.5);
+}
+.popup-title{
+	font-family: 'Quicksand', sans-serif;
+	color: white;
+}
+
+.mui-text-white{
+	font-family: 'Quicksand', sans-serif;
+	color: white;
+}
+.mui-text-orange{
+	color: #FF512F;
+	font-family: 'Quicksand', sans-serif;
+}
+.mui-text-green{color: #009688 !important;}
+.mui-text-green.mui-lighten-50{color: rgba(0,150,136,0.5) !important;}
+
+.mui-spinner-orange{
+	stroke: #FF512F;
+    fill: #FF512F; 
+}
+
+.mui-text-bold{
+	font-weight: bold;
+}
+.mui-icon{font-size: 30px;}
+.mui-button-icon > .mui-icon{font-size: 30px; margin-right: 10px;}
+
+/*Maker Block UI Align Classes*/
+.mui-align-center{text-align: center;}
+.mui-align-left{text-align: left;}
+.mui-align-right{text-align: right;}
+
+/*Maker Block UI Gradient Backgrounds*/
+.mui-bg-dark-linear{	
+	background: #485563; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #485563 , #29323c); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #485563 , #29323c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color: white;
+}
+.mui-bg-dark-linear  input{
+	color: white !important;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.mui-button{
+	width: auto;
+	border-radius: 5px;
+	border: none;
+	height: 48px;
+	width: 50px;
+}
+.mui-button-icon{
+	background-color: rgba(0,0,0,0);
+	color: white;
+}
+/*Maker Block UI Float div*/
+.mui-fly-left{
+    position:absolute;
+    top:0;
+    left:0;
+}
+.mui-stick-top-right{
+    position:absolute;
+    top:0;
+    right:0;
+    z-index: 1;
+}
+.mui-stick-top-left{
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: 1;
+}
+.mui-stick-top-right.mui-button-icon{
+	width: auto;
+	height: 35;
+}
+.mui-fly-right.mui-icon{
+}
+
+.mui-bar > .title{
+	font-weight: bold;
+	font-family: 'Quicksand', sans-serif;
+}
+
+/*Maker Block UI Bar Backgrounds*/
+.mui-bar-orange{
+	background: #FF512F;
+}
+.mui-bar-orange > .title{
+	color: white
+}
+.mui-bar-dark{
+	background: #29323c;
+	border-color: rgba(143,143,143, 0.5);
+}
+.mui-bar-dark> .title{
+	color: rgb(143,143,143);
+	font-family: 'Quicksand', sans-serif;
+}
+.mui-tabs-dark > .tabs,
+.tabs.mui-tabs-dark {
+  border-color: rgba(143,143,143, 0.5);
+  font-family: 'Quicksand', sans-serif;
+  background-color: #29323c;
+  background-image: linear-gradient(0deg, rgba(143,143,143, 1), rgba(143,143,143, 0.5) 50%, transparent 50%);
+  color: #fff; }
+  .mui-tabs-dark > .tabs .tab-item .badge,
+  .tabs.mui-tabs-dark .tab-item .badge {
+    background-color: #fff;
+    color: #29323c; }
+
+ion-tabs.mui-tabs-color-active-orange .tab-item {
+  color: #FF512F; }
+  ion-tabs.mui-tabs-color-active-orange .tab-item.tab-item-active, ion-tabs.mui-tabs-color-active-orange .tab-item.active, ion-tabs.mui-tabs-color-active-orange .tab-item.activated {
+    color: #FF512F; }
+.mui-block-center{
+	margin: auto;
+	display: block;
+}
+.mui-form > .list{
+	background-color: rgba(0,0,0,0.2);
+	border-radius: 5px;
+}
+.mui-form > .list > .mui-item{
+	border-bottom: 1px solid rgba(143,143,143,0.5);
+}
+.mui-form > .list > .mui-item:last-child{
+	border-bottom: none;
+}
+.mui-form input{
+	height: 40px;
+}
+.mui-form > .form-terms{
+	text-align: center;
+	font-size: 15px;
+	padding: 4px;
+	margin-top: -5px;
+}
+.mui-form-keypal.mui-form{
+	position: absolute;
+	bottom: 10%;
+	top: 5%;
+	width: 95%;
+}
+.mui-form-keypal.mui-form > .header{
+	height: 40%;
+}
+.mui-form-keypal.mui-form > .header > .logo{
+	height: 50%;
+}
+.mui-form-keypal.mui-form > .header > .title{
+	position: relative;
+	top: 5%;
+	text-align: center;
+	font-weight: bold;
+	font-size: 150%;
+	color: white;
+	font-family: 'Quicksand', sans-serif;
+}
+.mui-form-pal > .mui-form-header{
+	height: 50%;
+}
+.mui-form-pal > .mui-form-header > .mui-form-logo{
+	height: 50%;
+	width: auto;
+	object-fit: contain;
+}
+.mui-form-pal > .mui-form-header > h2{
+	position: relative;
+	top: 10%;
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+}
+
+/*MakerBlock UI Buttons*/
+.mui-button-orange{
+	border-color: #f12800;
+    background-color: #FF512F;
+    color: white !important;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+.mui-button-orange.active, .mui-button-orange.activated{
+	border-color: #d32300;
+    background-color: #f12800;
+    color: white !important;
+}
+.mui-button-orange:hover{
+    color: white;
+}
+.mui-button-disabled{
+	border-color: rgba(143,143,143,0.1);
+    background-color: #29323c;
+    color: rgba(143,143,143,0.5) !important;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+.mui-button-diabled.active, .mui-button-diabled.activated{
+	border-color: rgba(143,143,143,0.1);
+    background-color: #29323c;
+    color: rgba(143,143,143,0.5) !important;
+}
+.mui-button-diabled:hover{
+    color: rgba(143,143,143,0.5);
+}
+.mui-input-icon{
+	font-size: 18px;
+	position: relative;
+	color: rgba(143,143,143,0.5);
+	top: 0;
+	right: 0;
+	margin-right: 16px;
+	margin-top: 4px;
+}
